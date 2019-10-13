@@ -16,7 +16,7 @@ class _LaunchScreenAnimationState extends State<LaunchScreenAnimation> with Sing
     super.initState();
     _animationControler = AnimationController(
       duration: Duration(
-        seconds: 4 //执行4秒
+        seconds: 1 //执行4秒
         ),
       vsync: this,
     );

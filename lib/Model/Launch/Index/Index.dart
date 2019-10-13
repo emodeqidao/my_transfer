@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../Pages/DrawerPage.dart';
 
 class IndexPage extends StatelessWidget {
   @override
@@ -8,9 +9,7 @@ class IndexPage extends StatelessWidget {
         appBar: AppBar(
           title: Text('Transfer'),
         ),
-        body: Center(
-          child: Text('index 文本'),
-        ),
+        drawer: DrawerPage(),
       ),
     );
   }
