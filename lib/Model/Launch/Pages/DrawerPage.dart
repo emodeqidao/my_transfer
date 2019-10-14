@@ -15,7 +15,6 @@ class _DrawerPageState extends State<DrawerPage> {
       accountName: null,
       accountEmail: null,
       currentAccountPicture: null,
-      margin: EdgeInsets.fromLTRB(0, 1, 0, 0),
       decoration: BoxDecoration(
           color: Colors.blue,
           image: DecorationImage(
@@ -27,12 +26,15 @@ class _DrawerPageState extends State<DrawerPage> {
     dataList.add(header);
     dataList.addAll(initData());
 
+
     return Drawer(
         child: ListView(
-      children: dataList,
+          padding: EdgeInsets.only(),
+          children: dataList,
     ));
   }
 }
+
 
 List<Widget> initData() {
   List<Widget> titleArray = new List();
